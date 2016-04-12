@@ -25,4 +25,7 @@ Template.images.helpers({
 });
 
 Template.images.events({
+  'click .js-image': (event) => {
+    $(event.target).css({width: '50%'});
+  }
 });
